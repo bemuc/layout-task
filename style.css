@@ -1,0 +1,150 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #EFF6FF;
+  color: #2A4A5C;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+    display: flex;
+}
+
+.logo{
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    width: 300px;
+    height: 300px;
+}
+
+.container {
+  width: 100vh;
+  padding: 40px;
+  height: 900px;
+}
+
+.form-section {
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+.icon{
+  width: 10px;
+  height: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px; 
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.facebook-btn,
+.linkedin-btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  border: none;
+}
+
+.facebook-btn {
+  background-color: #255A9B;
+}
+
+.linkedin-btn {
+  background-color: #0076B6;
+}
+
+.divider {
+  text-align: center;
+  color: #999;
+  margin-bottom: 40px;
+}
+
+
+.input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 45px;
+  
+}
+
+.input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 0.5px solid #999;
+}
+
+input[required]{
+  border-left: 2px solid #255A9B;
+}
+
+.investor {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.investor-type {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.investor-type label {
+  font-size: 13px;
+  color: #333;
+}
+
+.description {
+  width: 200px;
+  background: #f8f8f8;
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 35px;
+  color: #555;
+  box-shadow: 2px 2px 2px rgba(180, 180, 180, 0.65);
+}
+
+.checkbox {
+  margin-bottom: 50px;
+  font-size: 12px;
+  color: #444;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+.checkbox a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.create {
+  width: 100%;
+  background-color: #2680eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
