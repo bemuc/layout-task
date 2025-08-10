@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('barlow/Barlow-Regular.otf') format('woff2'),
+         url('barlow/BarlowCondensed-Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Barlow', sans-serif;
   background-color: #EFF6FF;
   color: #2A4A5C;
   margin: 0;
@@ -8,27 +16,29 @@ body {
 
 .main{
     display: flex;
+    margin: 40px;
 }
 
 .logo{
-    position: absolute;
-    top: -40px;
-    left: 40px;
-    width: 300px;
-    height: 300px;
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+}
+.image{
+  width: 100vw;
+  height: auto;
+  background-image:url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
-  width: 100vh;
-  padding: 40px;
-  height: 900px;
-}
-
-.form-section {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
   padding: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-}
+} 
+
 .icon{
   width: 10px;
   height: 10px;
@@ -36,7 +46,6 @@ body {
 
 h2 {
   font-size: 22px;
-  margin-bottom: 5px;
   color: #222;
 }
 
@@ -49,7 +58,6 @@ p {
 .social-buttons {
   display: flex;
   gap: 10px; 
-  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -57,6 +65,7 @@ p {
 .linkedin-btn {
   flex: 1;
   padding: 10px;
+  font-family: 'Barlow', sans-serif;
   font-size: 14px;
   color: white;
   border: none;
@@ -71,34 +80,67 @@ p {
 }
 
 .divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #999;
   margin-bottom: 40px;
 }
 
+.divider p {
+  margin: 0px 20px ;
+}
+.line{
+  width: 50px;
+  border: 0.5px solid #343a3e;
+  padding: 0px 50px;
+}
 
-.input {
+ .input {
   display: flex;
   gap: 10px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   
 }
 
-.input input {
-  flex: 1;
-  padding: 10px;
-  font-size: 14px;
-  border: 0.5px solid #999;
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+    width: 300px;
+    border: none;
+    border-left: 1px solid #2A4A5C;
+  }
+
+  .input-box label {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    font-size: 12px;
+    color: #555;
+    padding: 0 4px;
+    border: none;
+  }
+
+  .input-box input {
+    width: 100%;
+    padding: 18px 8px 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+  }
+.mail{
+  border: 1px solid red;
 }
 
-input[required]{
-  border-left: 2px solid #255A9B;
-}
 
 .investor {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+}
+.investor + p {
+  margin-bottom: 40px;
 }
 
 .investor-type {
