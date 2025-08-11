@@ -165,13 +165,13 @@ p {
   box-shadow: 2px 2px 2px rgba(180, 180, 180, 0.65);
 }
 
-.checkbox {
+.checkbox_agree {
   margin-bottom: 50px;
   font-size: 12px;
   color: #444;
 }
 
-.checkbox input {
+.checkbox_agree input {
   margin-right: 5px;
 }
 
@@ -180,7 +180,7 @@ p {
   text-decoration: none;
 }
 
-.create {
+.create_account_btn {
   width: 100%;
   background-color: #2680eb;
   color: white;
