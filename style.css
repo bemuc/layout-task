@@ -179,9 +179,24 @@ p {
   text-decoration: none;
 }
 
+.actions_btn{
+  display: flex;
+  gap: 10px;
+}
+
 .create_account_btn {
   width: 100%;
   background-color: #2680eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.comment_btn{
+  width: 100%;
+  background-color: green;
   color: white;
   border: none;
   padding: 12px;
